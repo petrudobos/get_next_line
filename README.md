@@ -6,7 +6,7 @@
 
 Get_next_line is a programming assignment for first year students at Academy+Plus.
 
-get_next_line basically reads a file line by line.
+get_next_line basically reads a file line by line, similar to the getline(3). It will allow you to read a line ending with a newline character from a file descriptor.
 
 Disclaimer: *There [are][10] [so][11] [many][12] [easier][13] methods of doing this by using standard C functions. But the goal here is to be able to do it by using any functions from my [libft][14] and only the standard functions `read`, `malloc` and `free`.*
 
@@ -16,8 +16,14 @@ Do report bugs, and raise issues and pull requests as you see fit. Improvements 
 
 ## Usage
 
-Clone and open the directory, then 'make'.
-Test the functions with your own main function and inputs.
+Clone and open the directory.
+Compile with `make -C libft/ fclean && make -C libft/`. Then:
+
+`clang -Wall -Wextra -Werror -I libft/includes -o get_next_line.o -c get_next_line.c`
+
+`clang -Wall -Wextra -Werror -I libft/includes -o main.o -c main.c`
+
+`clang -o test_gnl main.o get_next_line.o -I libft/includes -L libft/ -lft`
 
 ## License
 
@@ -28,4 +34,4 @@ Test the functions with your own main function and inputs.
 [11]: http://stackoverflow.com/questions/2372813/reading-one-line-at-a-time-in-c
 [12]: http://stackoverflow.com/questions/9206091/going-through-a-text-file-line-by-line-in-c
 [13]: https://linux.die.net/man/3/getline
-[14]: https://github.com/R4meau/libft
+[14]: https://github.com/petrudobos/libft
