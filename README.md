@@ -29,7 +29,7 @@ Compile with `make -C libft/ fclean && make -C libft/`. Then:
 
 ## License
 
-[MIT © Petru Dobos.](https://github.com/petrudobos/libft/blob/master/LICENSE)
+[MIT © Petru Dobos.](https://github.com/petrudobos/get_next_line/blob/master/LICENSE)
 
 [1]: https://github.com/petrudobos/get_next_line/blob/master/get_next_line.en.pdf
 [2]: http://stackoverflow.com/questions/3501338/c-read-file-line-by-line
